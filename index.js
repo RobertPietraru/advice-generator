@@ -4,7 +4,6 @@ const label = document.querySelector("h3");
 const text = document.querySelector("h1");
 var ran = false;
 if (!ran) {
-    ;
     fetch(`https://api.adviceslip.com/advice/${Math.random() * 224}`)
         .then((response) => response.json())
         .then((json) => {
