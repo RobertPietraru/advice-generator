@@ -1,0 +1,104 @@
+:root {
+    --c-primary: hsl(193, 38%, 86%);
+    --c-secondary: hsl(217, 19%, 38%);
+    --c-accent: hsl(150, 100%, 66%);
+    --c-background: hsl(218, 23%, 16%);
+    --c-background-secondary: hsl(217, 19%, 24%);
+}
+
+/* reset */
+/* utilities */
+@media (max-width: 40em) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: inherit;
+    }
+
+}
+
+@media (min-width: 40em) {
+    .desktop-only {
+        display: inherit;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+}
+
+/* design */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+    font-weight: 800;
+}
+
+body {
+    background-color: var(--c-background);
+    width: 100%; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+main {
+    border-radius: 1rem;
+    background-color: var(--c-background-secondary);
+    width: min(100%, 40rem);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem min(7%,4rem) ;
+    padding-bottom: 0;
+}
+main > img {
+    width: 100%;
+}
+
+
+main h1 {
+    color: var(--c-primary);
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+main h3 {
+    color: var(--c-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.4vw;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.button {
+    border-radius: 100%;
+    padding: 1rem;
+    background-color: var(--c-accent);
+    width: 3.8rem;
+    aspect-ratio: 1;
+    border: none;
+    position: relative;
+    top: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover {
+    box-shadow: 1px 1px 3rem var(--c-accent);
+}
+.button:active {
+    background-color: white;
+}
