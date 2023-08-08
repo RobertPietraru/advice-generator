@@ -6,7 +6,6 @@
     --c-background-secondary: hsl(217, 19%, 24%);
 }
 
-/* reset */
 /* utilities */
 @media (max-width: 40em) {
     .desktop-only {
@@ -30,7 +29,7 @@
 
 }
 
-/* design */
+/* reset */
 *,
 *::before,
 *::after {
@@ -41,6 +40,7 @@
     font-weight: 800;
 }
 
+/* design */
 body {
     background-color: var(--c-background);
     width: 100%; 
